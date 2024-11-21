@@ -3,7 +3,7 @@ services:
     image: postgis/postgis:13-master
     container_name: rvthn2_db
     ports:
-      - ${DB_DUMP_PORT}:5432
+      - ${DB_DUMP_PORT}:5472
     platform: linux/amd64
     volumes:
       - ./data/db:/var/lib/postgresql/data
